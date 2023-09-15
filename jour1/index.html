@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la wewe</title>
+
+    <script>
+        // Fonction pour afficher une alerte lorsque la page est chargée
+        window.onload = function() {
+            alert("La page est chargée !");
+        };
+    </script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>WEWE.com</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/a-propos">À propos</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale -->
+    <main>
+        <section>
+            <h2>Formulaire</h2>
+            <form action="/traitement-formulaire" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom"><br>
+
+                <label for="mot-de-passe">Mot de passe :</label>
+                <input type="password" id="mot-de-passe" name="mot-de-passe"><br>
+
+                <label for="case-a-cocher">Case à cocher :</label>
+                <input type="checkbox" id="case-a-cocher" name="case-a-cocher"><br>
+
+                <label>Choix :</label>
+                <input type="radio" id="choix1" name="choix" value="option1">
+                <label for="choix1">Option 1</label>
+                <input type="radio" id="choix2" name="choix" value="option2">
+                <label for="choix2">Option 2</label><br>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Image et Vidéo</h2>
+            <article>
+                <img src="logo.png" alt="Image de démonstration">
+            </article>
+            <article>
+                <video controls>
+                    <source src="The Office- Michael Scott No God No.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la vidéo.
+                </video>
+            </article>
+        </section>
+
+        <section>
+            <h2>Tableau</h2>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Âge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Jane</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section>
+            <h2>Liens</h2>
+            <article>
+                <p><a href="https://www.dofus.com/fr/prehome">Lien externe Dofus</a></p>
+            </article>
+            <article>
+                <p><a href="#ancre">Lien vers ancre</a></p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Listes</h2>
+            <article>
+                <h3>Liste ordonnée</h3>
+                <ol>
+                    <li>Élément 1</li>
+                    <li>Élément 2</li>
+                    <li>Élément 3</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Liste non ordonnée</h3>
+                <ul>
+                    <li>Point A</li>
+                    <li>Point B</li>
+                    <li>Point C</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Texte formaté</h2>
+            <article>
+                <p>Ceci est un <strong>texte fort</strong>.</p>
+                <p>Ceci est un <em>texte en emphase</em>.</p>
+                <blockquote>Ceci est une citation.</blockquote>
+                <code>Ceci est du code source</code>
+                <p><abbr title="Hypertext Markup Language">HTML</abbr></p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Aside (barre latérale) -->
+    <aside>
+        <h2>Barre latérale</h2>
+        <p>Contenu de la barre latérale.</p>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contenu du pied de page.</p>
+    </footer>
+
+    <!-- Ancre pour la navigation -->
+    <a id="ancre"></a>
+</body>
+</html>
